@@ -50,9 +50,20 @@ só execute estes passos se não tem nenhum projeto:
    * liste todos os artigos escritos por um autor num determinado intervalo de dias
 
 ### Views e Templates
-12. uma vez testada a base de dados, crie o ficheiro urls.py na aplicação, e crie rotas (em urls.py) para funções (em views.py) que respondem a pedidos HTTP request com ficheiros HTML.
-13. a aplicação deve permitir registar novos autores. Para tal, crie em forms.py a classe para gerar o formulário.
-14.  a aplicação deve apresentar um formulário que permita criar, editar ou apagar artigos 
-15.  Renderize cada notícia na forma de um "postal" que apresente toda a informação de cada artigo. Renderize adequadamente o blog, suas áreas e artigos, utilizando as técnicas de CSS grid e flexbox que aprendeu. 
-17.  cada artigo deve ter um botão que permita inserir um novo comentário. 
-18.  cada artigo deve ter uma estrela que permita inserir um "like". 
+1. uma vez testada a base de dados, crie o ficheiro urls.py na aplicação, e crie rotas (em urls.py) para funções (em views.py) que respondem a pedidos HTTP request com ficheiros HTML.
+2. a aplicação deve permitir registar novos autores. Para tal, crie em forms.py a classe para gerar o formulário.
+3.  a aplicação deve apresentar um formulário que permita criar, editar ou apagar artigos 
+4.  Renderize cada notícia na forma de um "postal" que apresente toda a informação de cada artigo. Renderize adequadamente o blog, suas áreas e artigos, utilizando as técnicas de CSS grid e flexbox que aprendeu. 
+5.  cada artigo deve ter um botão que permita inserir um novo comentário. 
+6.  cada artigo deve ter uma estrela que permita inserir um "like". 
+
+#### Finalização
+1. sincronize o seu projeto com o seu repositorio GitHub. pode usar os seguitnes comandos:
+```Bash
+git add .
+git commit -m "blog expandido com mais classes"
+git push
+```
+2. no PythonAnyWhere, atualize a sua aplicação com o comando `git pull`.
+3. sincronize a base fazendo migração (`python manage.py makemigrations`) e sincronização da base de dados (`python manage.py migrate`).
+4. lance novamente a aplicação.
