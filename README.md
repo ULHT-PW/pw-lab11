@@ -17,18 +17,21 @@ Exercício que expande o [blog do lab10](https://github.com/ULHT-PW/pw-lab10/tre
 * um comentário tem um título e texto.
 * um artigo pode ter, 0, 1  ou mais likes, tendo associado um contador que é apresentado no artigo, com um ícone, sendo um botão que qualquer pessoa pode clicar para que fique registado que gostou.
 
-# Criação e configuração da aplicação django
-só execute estes passos se não tem nenhum projeto: 
-1. crie o seu projeto. Com a consola numa pasta à sua escolha para alojar o projeto, execute o comando `django-admin startproject config .` 
-2. crie a aplicação jornal, com o comando `python manage.py startapp jornal`
-4. em `config\settings.py`, adicione à lista INSTALLED_APPS a aplicação `jornal`. 
-5. em `config\settings.py`, indique ainda onde guardará as imagens que carregar, associada a cada artigo. Para tal, adicione as linhas `MEDIA_URL = '/media/'`  e  `MEDIA_ROOT = os.path.join(BASE_DIR, 'media')`
+# Projeto Django
+
+1. Sejá tem criado o seu projeto Portfolio, abra-o 
+2. Se o portfolio estiver no GitHub mas não na máquina em que se encotra, faça um clone do repositorio do GiHub `git clone <url repo githu>`
+3. Se ainda não tem projeto criado para o seu portfolio em django, execute estes passos: 
+    1. crie o seu projeto. Com a consola numa pasta à sua escolha para alojar o projeto, execute o comando `django-admin startproject config .` 
+    2. crie a aplicação jornal, com o comando `python manage.py startapp jornal`
+    4. em `config\settings.py`, adicione à lista INSTALLED_APPS a aplicação `jornal`. 
+    5. em `config\settings.py`, indique ainda onde guardará as imagens que carregar, associada a cada artigo. Para tal, adicione as linhas `MEDIA_URL = '/media/'`  e  `MEDIA_ROOT = os.path.join(BASE_DIR, 'media')`
 
 # Models 🛢
 1. Faça num papel a modelação com um Diagrama Entidade Relação e valide com o seu docente antes de continuar. Deverá explorar as relações OneToOne, ForeignKey e ManyToMany.
 2. Em `blog\models.py`, [defina as classes](https://moodle.ensinolusofona.pt/pluginfile.php/549222/mod_label/intro/pw-04-django-02.pdf?#page=4) necessárias para implementar a base de dados que permita modelar o blog. Não se esqueça de especificar ocmo se apresentam as classes na forma de uma string, usando a função `__str__(self)__`.  
-3. Registe todas as classes em admin.py. Por exemplo, para a classe `Artigo`  deverá inserir a instrução `admin.site-register(Artigo)`.
-4. crie um ficheiro de migrações com `python manage-py makemigrations`, e migre as classes definidas para a base de dados com `python manage-py migrate`
+3. Registe todas as classes em admin.py. Por exemplo, para a classe `Artigo`  deverá inserir a instrução `admin.site.register(Artigo)`.
+4. crie um ficheiro de migrações com `python manage.py makemigrations`, e migre as classes definidas para a base de dados com `python manage.py migrate`
 5. crie um utilizador superuser com `python manage.py createsuperuser`. 
 6. Aceda à aplicação admin, `127.0.0.1:8000/admin` que lhe permita aceder à aplicação admin. Insira alguns elementos na base de dados, para verificar se está tudo correto:
    * crie um blog
