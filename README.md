@@ -10,9 +10,8 @@
 
 # Modelação
 * veja com atenção estes [slides sobre modelação](https://moodle.ensinolusofona.pt/pluginfile.php/549222/mod_label/intro/pw-04-django-03-models.pdf)
-* siga o [video-tutorial para criação de app no PythonAnyWhere e sua edição num PC local](https://educast.fccn.pt/vod/clips/29lxpwwtds/html5.html?locale=pt).
 
-# Características 😎
+# Modelação da aplicação blog
 * O blog deverá ter uma conta associada. Uma conta apenas pode ter um blog. A conta é caracterizada por um link do repo github e do pythonanywhere onde está o projeto. Esta informação deve constar no rodapé
 * O blog está dividido em áreas. Cada área é constituida por uma compilação de artigos.
 * O blog tem um conjunto de áreas pré-definidas, mas que podem ser expandidas se desejável.
@@ -22,16 +21,14 @@
 * um artigo pode ter, 0, 1  ou mais likes, tendo associado um contador que é apresentado no artigo, com um ícone, sendo um botão que qualquer pessoa pode clicar para que fique registado que gostou.
 
 # Projeto Django
-
-1. Se já fez o lab 10 Portfolio Parte II, abra-o
-3. Se ainda não começou o Portfolio Parte II, execute estes passos: 
+1. Se já fez o lab 10 Portfolio Parte II e tem a aplicação django a correr no pythonAnyWhere, abra-a e passe para a criação de Models.
+2. Senão, siga o [video-tutorial para criação de app no PythonAnyWhere e sua edição num PC local](https://educast.fccn.pt/vod/clips/29lxpwwtds/html5.html?locale=pt).
     1. Abra uma pasta vazia com o VS Code e execute na consola o comando `django-admin startproject config .` 
     2. crie a aplicação jornal, com o comando `python manage.py startapp jornal`
     4. em `config\settings.py`, adicione à lista INSTALLED_APPS a aplicação `jornal`. 
     5. em `config\settings.py`, indique ainda onde guardará as imagens que carregar, associada a cada artigo. Para tal, adicione as linhas `MEDIA_URL = '/media/'`  e  `MEDIA_ROOT = os.path.join(BASE_DIR, 'media')`
 
 # Criação de Models (ficheiro `models.py`) e da base de dados 🛢
-
 1. Faça num papel a modelação com um Diagrama Entidade Relação e valide com o seu docente antes de continuar. Deverá explorar as relações OneToOne, ForeignKey e ManyToMany.
 2. Em `blog\models.py`, defina as classes necessárias para implementar a base de dados que permita modelar o blog. Não se esqueça de especificar ocmo se apresentam as classes na forma de uma string, usando a função `__str__(self)__`.  
 3. Registe todas as classes em admin.py. Por exemplo, para a classe `Artigo`  deverá inserir a instrução `admin.site.register(Artigo)`.
