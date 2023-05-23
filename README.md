@@ -9,7 +9,7 @@ Exercício que expande o [blog do lab10](https://github.com/ULHT-PW/pw-lab10/tre
 * Concluir na aula prática!
 
 # Características 😎
-* O blog deverá ter uma conta associada. Uma conta apenas pode ter um blog. A conta tem link do repo github e do pythonanywhere. Esta infromação deve constar no rodapé
+* O blog deverá ter uma conta associada. Uma conta apenas pode ter um blog. A conta é caracterizada por um link do repo github e do pythonanywhere onde está o projeto. Esta informação deve constar no rodapé
 * O blog está dividido em áreas. Cada área é constituida por uma compilação de artigos.
 * O blog tem um conjunto de áreas pré-definidas, mas que podem ser expandidas se desejável.
 * Existe um conjunto de autores registados na base de dados que escrevem artigos para o jornal. Cada jornalista tem um nome e áreas de interesse (que se mapeiam com as áreas do blog).
