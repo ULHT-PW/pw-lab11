@@ -1,13 +1,14 @@
 **UNIVERSIDADE LUSÓFONA**
 
-# Lab 11: Blog
+# Lab 11: Blog 📓
 Exercício que expande o [blog do lab10](https://github.com/ULHT-PW/pw-lab10/tree/main#1-blog).
 
 **Objetivo**
 * Exercitar os conceitos de modelação aprendidos, com uma base de dados que explora todos os tipos de relação.
 * Engloba um conjundo de conhecimentos que deverá dominar, e que saem na frequencia final
+* Concluir na aula prática!
 
-### Blog
+### Características
 * O blog deverá ter um dono, que é um autor. Um autor apenas pode ter um blog.
 * O blog está dividido em áreas. Cada área é constituida por uma compilação de artigos.
 * O blog tem um conjunto de áreas pré-definidas, mas que podem ser expandidas se desejável.
@@ -23,7 +24,7 @@ só execute estes passos se não tem nenhum projeto:
 4. em `config\settings.py`, adicione à lista INSTALLED_APPS a aplicação `jornal`. 
 5. em `config\settings.py`, indique ainda onde guardará as imagens que carregar, associada a cada artigo. Para tal, adicione as linhas `MEDIA_URL = '/media/'`  e  `MEDIA_ROOT = os.path.join(BASE_DIR, 'media')`
 
-### Models
+### Models 🛢
 1. Faça num papel a modelação com um Diagrama Entidade Relação e valide com o seu docente antes de continuar. Deverá explorar as relações OneToOne, ForeignKey e ManyToMany.
 2. Em `blog\models.py`, [implemente as classes](https://moodle.ensinolusofona.pt/pluginfile.php/549222/mod_label/intro/pw-04-django-02.pdf?#page=4) necessárias para implementar a base de dados que permita modelar o blog. Não se esqueça de especificar ocmo se apresentam as classes na forma de uma string, usando a função `__str__(self)__`.  
 3. Registe todas as classes em admin.py. Por exemplo, para a classe `Artigo`  deverá inserir a instrução `admin.site-register(Artigo)`.
@@ -49,7 +50,7 @@ só execute estes passos se não tem nenhum projeto:
    * adicione um comentário ao artigo com mais likes
    * liste todos os artigos escritos por um autor num determinado intervalo de dias
 
-### Views e Templates
+### Views e Templates 🏖
 1. uma vez testada a base de dados, crie o ficheiro urls.py na aplicação, e crie rotas (em urls.py) para funções (em views.py) que respondem a pedidos HTTP request com ficheiros HTML.
 2. a aplicação deve permitir registar novos autores. Para tal, crie em forms.py a classe para gerar o formulário.
 3.  a aplicação deve apresentar um formulário que permita criar, editar ou apagar artigos 
@@ -57,7 +58,12 @@ só execute estes passos se não tem nenhum projeto:
 5.  cada artigo deve ter um botão que permita inserir um novo comentário. 
 6.  cada artigo deve ter uma estrela que permita inserir um "like". 
 
-#### Finalização
+
+### Models e Views restantes 🛢
+* Crie em casa classes para as restantes entidades que foram identificadas no Lab 10 e respetivas views que permitam listar os elementos disponviceis na base de dados.
+* Procure estabelecer relações entre tabelas.
+
+#### Finalização ☁
 1. sincronize o seu projeto com o seu repositorio GitHub. pode usar os seguitnes comandos:
 ```Bash
 git add .
