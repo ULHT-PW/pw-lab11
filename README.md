@@ -10,6 +10,7 @@
 
 # Modelação
 * veja com atenção estes [slides sobre modelação](https://moodle.ensinolusofona.pt/pluginfile.php/549222/mod_label/intro/pw-04-django-03-models.pdf)
+* siga o [video-tutorial para criação de app no PythonAnyWhere e sua edição num PC local](https://educast.fccn.pt/vod/clips/29lxpwwtds/html5.html?locale=pt).
 
 # Características 😎
 * O blog deverá ter uma conta associada. Uma conta apenas pode ter um blog. A conta é caracterizada por um link do repo github e do pythonanywhere onde está o projeto. Esta informação deve constar no rodapé
