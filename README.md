@@ -22,10 +22,9 @@ Exercício que expande o [blog do lab10](https://github.com/ULHT-PW/pw-lab10/tre
 
 # Projeto Django
 
-1. Sejá tem criado o seu projeto Portfolio, abra-o 
-2. Se o portfolio estiver no GitHub mas não na máquina em que se encotra, faça um clone do repositorio do GiHub `git clone <url repo githu>`
-3. Se ainda não tem projeto criado para o seu portfolio em django, execute estes passos: 
-    1. crie o seu projeto. Com a consola numa pasta à sua escolha para alojar o projeto, execute o comando `django-admin startproject config .` 
+1. Se já fez o lab 10 Portfolio Parte II, abra-o
+3. Se ainda não começou o Portfolio Parte II, execute estes passos: 
+    1. Abra uma pasta vazia com o VS Code e execute na consola o comando `django-admin startproject config .` 
     2. crie a aplicação jornal, com o comando `python manage.py startapp jornal`
     4. em `config\settings.py`, adicione à lista INSTALLED_APPS a aplicação `jornal`. 
     5. em `config\settings.py`, indique ainda onde guardará as imagens que carregar, associada a cada artigo. Para tal, adicione as linhas `MEDIA_URL = '/media/'`  e  `MEDIA_ROOT = os.path.join(BASE_DIR, 'media')`
@@ -81,7 +80,7 @@ Exercício que expande o [blog do lab10](https://github.com/ULHT-PW/pw-lab10/tre
 * Procure estabelecer relações entre tabelas.
 
 # Finalização ☁
-1. sincronize o seu projeto com o seu repositorio GitHub. pode usar os seguitnes comandos:
+1. sincronize o seu projeto com o seu repositorio GitHub. pode usar os seguintes comandos:
 ```Bash
 git add .
 git commit -m "blog expandido com mais classes"
