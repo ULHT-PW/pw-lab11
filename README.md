@@ -41,14 +41,13 @@ só execute estes passos se não tem nenhum projeto:
    * primeiro, importe a base de dados, com a instrução `from journal.models import *`
    * Crie dois autores. garanta que ficam guardados na base de dados. Pode usar o método create, que cria e guarda. ou o construtor da classe, que retorna um objeto que deve depois ser guardado.
    * consulte os autores armazenados na base de dados, e confira que existem
-   * crie um artigo escrito por ambos
+   * consulte uma das áreas
+   * crie um artigo escrito por ambos, inserindo o titulo e área. depois deve adicionar cada um dos autores com o método Artigo.autores.add()
    * Liste os artigos do jornal
-   * liste os artigos de um determinado dia
-   * liste os artigos de um determinado dia e de uma área específica
    * liste os artigos escritos por um determinado autor. 
-   * liste todos os artigos escritos por um autor num determinado intervalo de dias
    * ordene os artigos por likes, e identifique o artigo com maior numero de likes 
    * adicione um comentário ao artigo com mais likes
+   * liste todos os artigos escritos por um autor num determinado intervalo de dias
 
 ### Views e Templates
 12. uma vez testada a base de dados, crie o ficheiro urls.py na aplicação, e crie rotas para funções que respondem a pedidos HTTP request.
