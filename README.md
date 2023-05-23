@@ -23,6 +23,7 @@
 # Projeto Django
 1. Se já fez o lab 10 Portfolio Parte II e tem a aplicação django a correr no pythonAnyWhere, abra-a e passe para a criação de Models.
 2. Senão, siga o [video-tutorial para criação de app no PythonAnyWhere e sua edição num PC local](https://educast.fccn.pt/vod/clips/29lxpwwtds/html5.html?locale=pt).
+3. alternativamente, pode criar diretamente um projeto local no seu PC da seguinte forma:
     1. Abra uma pasta vazia com o VS Code e execute na consola o comando `django-admin startproject config .` 
     2. crie a aplicação jornal, com o comando `python manage.py startapp jornal`
     4. em `config\settings.py`, adicione à lista INSTALLED_APPS a aplicação `jornal`. 
