@@ -1,12 +1,12 @@
 **UNIVERSIDADE LUSÓFONA**
 
 # Lab 11: Blog 📓
-Exercício que expande o [blog do lab10](https://github.com/ULHT-PW/pw-lab10/tree/main#1-blog).
 
 **Objetivo**
 * Exercitar os conceitos de modelação aprendidos, com uma base de dados que explora todos os tipos de relação.
 * Engloba um conjundo de conhecimentos que deverá dominar, e que saem na frequencia final
-* Concluir na aula prática!
+* Tente concluir na aula prática!
+* Este exercício expande o [blog desenvolvido no lab10](https://github.com/ULHT-PW/pw-lab10/tree/main#1-blog). Mas se ainda não fez, comece a partir de aqui diretamente, e integre depois.
 
 # Modelação
 * veja com atenção estes [slides sobre modelação](https://moodle.ensinolusofona.pt/pluginfile.php/549222/mod_label/intro/pw-04-django-03-models.pdf)
