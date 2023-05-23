@@ -28,7 +28,7 @@ só execute estes passos se não tem nenhum projeto:
 1. Faça num papel a modelação com um Diagrama Entidade Relação e valide com o seu docente antes de continuar. Deverá explorar as relações OneToOne, ForeignKey e ManyToMany.
 2. Em `blog\models.py`, [implemente as classes](https://moodle.ensinolusofona.pt/pluginfile.php/549222/mod_label/intro/pw-04-django-02.pdf?#page=4) necessárias para implementar a base de dados que permita modelar o blog. Não se esqueça de especificar ocmo se apresentam as classes na forma de uma string, usando a função `__str__(self)__`.  
 3. Registe todas as classes em admin.py. Por exemplo, para a classe `Artigo`  deverá inserir a instrução `admin.site-register(Artigo)`.
-4. crie um ficheiro de migrações com `python manage-py makemigrations`, e migre as classes definidas para a base de dados com `python manage-py makemigrations`
+4. crie um ficheiro de migrações com `python manage-py makemigrations`, e migre as classes definidas para a base de dados com `python manage-py migrate`
 5. crie um utilizador superuser com `python manage.py createsuperuser`. 
 6. Aceda à aplicação admin, `127.0.0.1:8000/admin` que lhe permita aceder à aplicação admin. Insira alguns elementos na base de dados, para verificar se está tudo correto:
    * crie um blog
