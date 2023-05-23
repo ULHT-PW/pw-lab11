@@ -8,6 +8,9 @@ Exercício que expande o [blog do lab10](https://github.com/ULHT-PW/pw-lab10/tre
 * Engloba um conjundo de conhecimentos que deverá dominar, e que saem na frequencia final
 * Concluir na aula prática!
 
+# Modelação
+* veja com atenção estes [slides sobre modelação](https://moodle.ensinolusofona.pt/pluginfile.php/549222/mod_label/intro/pw-04-django-03-models.pdf)
+
 # Características 😎
 * O blog deverá ter uma conta associada. Uma conta apenas pode ter um blog. A conta é caracterizada por um link do repo github e do pythonanywhere onde está o projeto. Esta informação deve constar no rodapé
 * O blog está dividido em áreas. Cada área é constituida por uma compilação de artigos.
@@ -30,7 +33,7 @@ Exercício que expande o [blog do lab10](https://github.com/ULHT-PW/pw-lab10/tre
 # Criação de Models (ficheiro `models.py`) e da base de dados 🛢
 
 1. Faça num papel a modelação com um Diagrama Entidade Relação e valide com o seu docente antes de continuar. Deverá explorar as relações OneToOne, ForeignKey e ManyToMany.
-2. Em `blog\models.py`, [defina as classes](https://moodle.ensinolusofona.pt/pluginfile.php/549222/mod_label/intro/pw-04-django-02.pdf?#page=4) necessárias para implementar a base de dados que permita modelar o blog. Não se esqueça de especificar ocmo se apresentam as classes na forma de uma string, usando a função `__str__(self)__`.  
+2. Em `blog\models.py`, defina as classes necessárias para implementar a base de dados que permita modelar o blog. Não se esqueça de especificar ocmo se apresentam as classes na forma de uma string, usando a função `__str__(self)__`.  
 3. Registe todas as classes em admin.py. Por exemplo, para a classe `Artigo`  deverá inserir a instrução `admin.site.register(Artigo)`.
 4. crie um ficheiro de migrações com `python manage.py makemigrations`, e migre as classes definidas para a base de dados com `python manage.py migrate`
 5. crie um utilizador superuser com `python manage.py createsuperuser`. 
