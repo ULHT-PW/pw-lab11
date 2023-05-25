@@ -17,7 +17,7 @@
 * O blog tem um conjunto de áreas pré-definidas, mas que podem ser expandidas se desejável.
 * Existe um conjunto de autores registados na base de dados que escrevem artigos para o jornal. Cada autor tem um nome e um conjunto de áreas de interesse (que se mapeiam com as áreas do blog).
 * Um artigo pode ser escrito por um ou mais autores, tendo associado os campos data, área, título, texto, imagem, link, um conjunto de comentários e *likes*.
-* um comentário tem um título e texto.
+* um artigo pode ter vários comentários, cada um com um título e texto.
 * um artigo pode ter, 0, 1  ou mais likes, tendo associado um contador que é apresentado no artigo, com um ícone, sendo um botão que qualquer pessoa pode clicar para que fique registado que gostou.
 
 # Projeto Django
