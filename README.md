@@ -75,8 +75,8 @@
 
 
 # Models e Views restantes 🛢
-* Crie em casa classes para as restantes entidades que foram identificadas no Lab 10 e respetivas views que permitam listar os elementos disponviceis na base de dados.
-* Procure estabelecer relações entre tabelas.
+* Crie classes para as restantes entidades que foram identificadas no [Lab 10](https://github.com/ULHT-PW/pw-lab10/blob/main/README.md#4-estrutura-) e respetivas views que permitam listar os elementos disponviceis na base de dados.
+* Garanta que existem relações entre tabelas.
 
 # Finalização ☁
 1. sincronize o seu projeto com o seu repositorio GitHub. pode usar os seguintes comandos:
